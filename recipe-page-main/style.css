@@ -1,0 +1,105 @@
+body {
+  /* height: 100vh; */
+  margin: 0;
+}
+.flex-container {
+  width: 100%;
+}
+.omelette {
+  width: 100%;
+}
+.content {
+  padding-inline: 8%;
+  padding-block: 8%;
+}
+.simple-recipe > .heading {
+  font-family: "Young Serif", serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: hsl(24, 5%, 18%);
+}
+.simple-recipe .desc,
+.nutrition .desc,
+.nutri {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  margin-block-start: 0;
+  color: hsl(30, 10%, 34%);
+}
+.prep-time > .prep {
+  padding-block: 6%;
+  border-radius: 10px;
+  background-color: hsl(330, 100%, 98%);
+}
+.prep > .heading {
+  padding-inline-start: 8%;
+  font-size: 26px;
+  font-weight: 700;
+  color: hsl(332, 51%, 32%);
+  font-family: "Outfit", sans-serif;
+}
+.prep-time > .prep ul li,
+.ingredients ul li,
+.instructions ol li {
+  margin-block-end: 2%;
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.prep-time > .prep ul li .bold {
+  font-weight: 700;
+}
+.ingredients > .heading,
+.instructions > .heading,
+.nutrition > .heading {
+  color: hsl(14, 45%, 36%);
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-family: "Young Serif", serif;
+}
+.ingredients ul li,
+.instructions ol li {
+  font-size: 18px;
+}
+.ingredients ul li::marker {
+  color: hsl(14, 45%, 36%);
+}
+.instructions ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+.instructions ol li .steps {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.nutri {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.calorie-value {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+@media only screen and (min-width: 1240px) {
+  body {
+    background-color: hsl(330, 100%, 95%);
+    position: relative;
+
+  }
+  .flex-container {
+    width: 30%;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-block: 5%;
+    border-radius: 12px;
+  }
+}
